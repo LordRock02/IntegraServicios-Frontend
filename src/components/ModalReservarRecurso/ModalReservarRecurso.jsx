@@ -51,6 +51,7 @@ const ModalReservarRecurso = ({ setShowModalReservarRecurso, recursoReservar, re
     const handleSubmit = (event) => {
         event.preventDefault();
         const validationErrors = validarReservaForm(formData,recursoReservar);
+        console.log(formData)
         console.log(validationErrors)
         setErrors(validationErrors);
 

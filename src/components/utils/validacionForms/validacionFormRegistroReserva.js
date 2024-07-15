@@ -72,6 +72,16 @@ export const validarReservaForm = (formData,recursoReservar) => {
         }
     }
 
+    const fechaMaxima = new Date();
+    fechaMaxima.setDate(fechaMaxima.getDate() + 30);
+
+    const fechaSeleccionada = new Date(formData.fechaReserva);
+
+    // Validar si la fecha seleccionada es más de 30 días en el futuro
+    if (fechaSeleccionada > fechaMaxima) {
+        errors.fechaReserva = 'No se puede seleccionar una fecha más de 30 días en el futuro.';
+    }
+
 
     return errors;
 };
