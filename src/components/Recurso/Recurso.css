@@ -1,0 +1,49 @@
+.container-home{
+    display: flex;
+    /* background-color: red; */
+    /* width: 20%; */
+    margin: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    /* -webkit-box-shadow: 0 0 5px 1px #a3a3a3;
+    -moz-box-shadow: 0 0 5px 1px #a3a3a3; */
+    box-shadow: 0 0 10px 1px #c6c6c6;
+    position: relative;
+    overflow-y: auto;
+}
+
+.containerRecursos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 93vh;
+    overflow-y: auto;
+}
+
+.containerRecursos button{
+    /* width: 90px; */
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px 0 20px;
+    margin-right: 10px;
+    background: linear-gradient(135deg, #f75959 0%, #f35587 100%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.containerRecursos .btn-detalles{
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+
+.reserva-icon{
+    font-size: 20px;
+    cursor: pointer;
+}

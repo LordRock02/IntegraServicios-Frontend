@@ -1,0 +1,119 @@
+.background-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem 2rem;
+    position: relative;
+}
+
+.containerForm .input-group{
+    width: 100%;
+    display: flex;
+    /* gap: 10px; */
+}
+
+.containerForm select{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.containerForm select:focus{
+    outline: none; /* Elimina el contorno de enfoque */
+    box-shadow: none; /* Elimina la sombra cuando está enfocado */
+    border-color: transparent; /* Hace que el borde sea transparente */
+}
+
+
+.diasDisponible{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.horasDisponible{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.horasDisponible div{
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    border: 1px dashed rgb(136, 136, 136);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+}
+
+.horasDisponible div select{
+    height: 30px;
+    width: auto;
+}
+
+.diasDisponible span{
+    border: 1px dashed black;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.diasDisponible span:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.diasDisponible .diaSeleccionado{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.containerForm .btn-default{
+    /* border: 1px solid red; */
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: lightgrey;
+    cursor: pointer;
+    font-size: 12px;
+    /* font-size: .5rem; */
+}
+
+
+.containerForm .closeModal{
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}

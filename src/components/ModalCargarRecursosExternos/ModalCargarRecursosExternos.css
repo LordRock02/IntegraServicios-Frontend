@@ -1,0 +1,305 @@
+.background-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFormCargarRecursos{
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem 2rem;
+    position: relative;
+}
+
+::selection{
+    color: #fff;
+    background: #6990F2;
+  }
+  .wrapper{
+    /* width: 500px; */
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    /* box-shadow: 7px 7px 12px rgba(0,0,0,0.05); */
+  }
+  .wrapper-upload{
+    /* width: 500px; */
+  }
+  
+  .wrapper header{
+    color: #6990F2;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .wrapper form{
+    /* height: 350px; */
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #f35588;
+  }
+  .wrapper-comparation .wrapper form{
+    min-height: 350px;
+  }
+  
+  .wrapper-upload form{
+    height: 100px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #f35588;
+  }
+  .wrapper-comparation{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: flex-start;
+    /* justify-content: center; */
+    /* width: 100vw; */
+  }
+  .wrapper-comparation .wrapper{
+    min-width: 600px;
+  }
+  form :where(i, p){
+    color: #f35588;
+  }
+  form i{
+    font-size: 30px;
+  }
+  form p{
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  section .row{
+    margin-bottom: 10px;
+    background: #E9F0FF;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section .row i{
+    color: #6990F2;
+    font-size: 30px;
+  }
+  section .details span{
+    font-size: 14px;
+  }
+  .progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+  }
+  .progress-area .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .progress-area .content .progress-bar{
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+  }
+  .content .progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    background: #6990F2;
+    border-radius: inherit;
+  }
+  .uploaded-area{
+    max-height: 232px;
+    overflow-y: scroll;
+  }
+  .uploaded-area.onprogress{
+    max-height: 150px;
+  }
+  .uploaded-area::-webkit-scrollbar{
+    width: 0px;
+  }
+  .uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+  }
+  .uploaded-area .row .details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+  }
+  .uploaded-area .row .details .size{
+    color: #404040;
+    font-size: 11px;
+  }
+  .uploaded-area i.fa-check{
+    font-size: 16px;
+  }
+  .imagenOriginal,.imagenRaster{
+    /* width: 530px; */
+    /* height: 340px; */
+    border-radius: 5px;
+  }
+  .options-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .options-area p{
+    color: #6990F2;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .options-area ul{ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .options-area ul li{
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.1s ease;
+  }
+  .options-area ul li:hover{
+    transform: scale(1.1);
+  }
+  
+  .channelBlue{
+    background-color: #259dff;
+  }
+  .channelGreen{
+    background-color: #30ff9e;
+  }
+  .channelRed{
+    background-color: #ff5e5e;
+  }
+  .channelInfra{
+    background-color: #572364;
+  }
+  .channelInfraC{
+    background-color: #B695C0;
+  }
+  
+  
+  
+  .content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .loader-section{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* max-width: 100%; */
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffffff; */
+    z-index:999;
+    transition: all 1s 1s ease-out;
+    opacity:1;
+  }
+  .loaded{
+    opacity:0;
+    z-index:-1;
+  }
+    
+  .loader {
+    width: 30px;
+    height: 30px;
+    border: 5px solid #6990F2;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loaderXL{
+    width: 80px;
+    height: 80px;
+  }
+  
+  @keyframes rotation {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  } 
+  
+  
+  
+  
+  .buttonFormats{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* CSS */
+  .buttonFormats button {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #f35588;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+  }
+  
+  .buttonFormats button:disabled {
+    cursor: default;
+  }
+  
+  .buttonFormats button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
+

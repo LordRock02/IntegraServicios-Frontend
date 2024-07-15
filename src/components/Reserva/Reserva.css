@@ -1,0 +1,36 @@
+:root {
+    --gridList-column: 280px;
+    --gridList-rows: 320px;
+    --gridList-gap: 25px
+}
+
+
+.container-home{
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    margin: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    /* -webkit-box-shadow: 0 0 5px 1px #a3a3a3;
+    -moz-box-shadow: 0 0 5px 1px #a3a3a3; */
+    box-shadow: 0 0 10px 1px #c6c6c6;
+    position: relative;
+}
+
+.containerReservas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 93vh;
+    overflow-y: auto;
+}
+
+.containerReservas .reserva-icon{
+    font-size: 20px;
+    color: #f35587;
+    cursor: pointer;
+}
+

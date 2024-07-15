@@ -1,0 +1,84 @@
+.background-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDetalles{
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem 2rem 2rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerDetalles h3{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.1);
+}
+
+
+.containerDetalles .horariosRecurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.1);
+    gap: 10px;
+}
+
+.containerDetalles .horariosRecurso > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerDetalles .closeModal{
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+
+
+.containerDetalles .horariosUnidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    gap: 10px;
+}
+
+.containerDetalles .horarioDia{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+.containerDetalles .horarioDia span{
+    border: 1px dashed black;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    transition: all .2s ease;
+}

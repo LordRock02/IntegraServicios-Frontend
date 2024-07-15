@@ -1,0 +1,88 @@
+:root {
+  --ancho-container: calc(100% - 250px);/*1361.33px*/
+  --color-titulo: #f35588;
+}
+#containerUsuario {
+  display: flex;
+  /* background-color: red; */
+  width: 100%;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  /* -webkit-box-shadow: 0 0 5px 1px #a3a3a3;
+  -moz-box-shadow: 0 0 5px 1px #a3a3a3; */
+  box-shadow: 0 0 10px 1px #c6c6c6;
+  position: relative;
+  align-items: center;
+}
+#containerUsuario #containerStats {
+  display: grid;
+  gap: 40px;
+  /* padding: 35px; */
+  grid-template-columns: repeat(4, 1fr);
+  height: 250px;
+  width: fit-content;
+  background-color: #fff;
+} 
+#containerUsuario #containerInfo {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: #fff;
+  width: fit-content;
+  padding: 30px 50px;
+}
+#containerInfo div{
+    display: inherit;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#containerInfo h2{
+    color: var(--color-titulo);
+    font-size: 2.5rem;
+}
+#containerInfo #editIcon{
+    font-size: 2rem;
+    margin-left: auto;
+    height: fit-content;
+}
+#containerInfo #userIcon{
+    font-size: 13rem;
+    height: fit-content; 
+    width: fit-content;
+}
+#containerInfo #tablaInfoUsuario{
+    margin: auto auto auto 50px;
+    height: fit-content;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+    font-size: 1.2rem;
+}
+#containerInfo #tablaInfoUsuario th, #tablaInfoUsuario  td{
+    width: fit-content;
+    padding: 0;
+    border-bottom: none;
+    text-align: left;
+}
+
+#containerStats div p:nth-child(1){
+  font-size: 60px;
+  color: var(--color-titulo);
+  font-weight: 800;
+  margin: 0;
+}
+
+#containerStats div p:nth-child(2){
+  font-size: 1rem;
+  font-size: 25px;
+  margin: 0;
+}
+
+
+.containerData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
